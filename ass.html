@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>
+                I'm Sumit Kumar Yadav,<br>
+                <span id="typing-animation"></span> Developer
+              </h2>
+              
+              <script>
+              // Initialize the typing animation
+              const typingAnimationElement = document.getElementById('typing-animation');
+              
+              // Create the text to be typed
+              const typingText = 'Front-end ';
+              
+              // Create a function to display the typing animation
+              function playTypingAnimation(text) {
+                let i = 0;
+                const interval = setInterval(() => {
+                  typingAnimationElement.textContent += text[i];
+                  i++;
+                  if (i === text.length) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                      resetTyping();
+                    }, 2000); // Wait 2 seconds before resetting
+                  }
+                }, 200); // Typing speed (200ms per letter)
+              }
+              
+              // Function to reset typing
+              function resetTyping() {
+                typingAnimationElement.textContent = ''; // Clear text
+                playTypingAnimation(typingText); // Restart animation
+              }
+              
+              // Start the typing animation
+              playTypingAnimation(typingText);
+              </script>
+              </h2>
+              
+              
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                 Inventore a, iure aliquam ipsum ratione doloribus exercitationem. <br>
+                 
+            </p>
+            <br>
+            <br>
+
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+        <div class="hero-image">
+            <img src="undraw.png" alt="Hero Image"
+            width: 808.01px;
+            height: 550.41px;
+            top: 231.59px;
+            left: 631.68px;
+            gap: 0px;
+            opacity: 0px;
+                         >
+        </div>
+    </section>
+   <section id="projects">
+        <!-- Projects Section -->
+        <div class="container" >
+            <h1>Projects</h1>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="/Image1.png" alt="Project 1">
+                    <h2>How To Make Flyer Design</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Awad Awd Lorem Ipsum...</p>
+                    <div class="tech-stack">
+                        <span>TypeScript</span>
+                        <a href="#"> <span>HTML</span></a> 
+                        <a href="#"> <span>css</span></a> 
+                        <a href="#"> <span>js</span></a> 
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+                <div class="project-card">
+                    <img src="/Image2.png" alt="Project 2">
+                    <h2> Project 2</h2>
+                    <p>Description for another project...</p>
+                    <div class="tech-stack">
+                      <a href="#"> <span>HTML</span></a> 
+                      <a href="#"> <span>css</span></a> 
+                      <a href="#"> <span>js</span></a> 
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/Image3.png" alt="Project 2">
+                    <h2> Project 2</h2>
+                    <p>Description for another project...</p>
+                    <div class="tech-stack">
+                      <a href="#"> <span>HTML</span></a> 
+                      <a href="#"> <span>css</span></a> 
+                      <a href="#"> <span>js</span></a> 
+                    </div>
+                </div>
+               
+                <div class="project-card">
+                    <img src="/Image4.png" alt="Project 2">
+                    <h2> Project 2</h2>
+                    <p>Description for another project...</p>
+                    <div class="tech-stack">
+                      <a href="#"> <span>HTML</span></a> 
+                      <a href="#"> <span>css</span></a> 
+                      <a href="#"> <span>js</span></a> 
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/Image2.png" alt="Project 2">
+                    <h2> Project 2</h2>
+                    <p>Description for another project...</p>
+                    <div class="tech-stack">
+                      <a href="#"> <span>HTML</span></a> 
+                      <a href="#"> <span>css</span></a> 
+                      <a href="#"> <span>js</span></a> 
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/Image2.png" alt="Project 2">
+                    <h2> Project 2</h2>
+                    <p>Description for another project...</p>
+                    <div class="tech-stack">
+                      <a href="#"> <span>HTML</span></a> 
+                      <a href="#"> <span>css</span></a> 
+                      <a href="#"> <span>js</span></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+   <!-- Recommedation part -->
+   <section id="s" class="recommendations-section">
+    <h2 id="recommendations">Recommendations</h2>
+    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Amet Minim Mollit...</p>
+
+    <div class="carousel-wrapper">
+        <!-- Reviews Grid -->
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <img src="/img 9.png" alt="James Gouse">
+                <h3>James Gouse</h3>
+                <p>Graphic Designer</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Great Quality! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <img src="/img 8.png" alt="Tiana Philips">
+                <h3>Tiana Philips</h3>
+                <p>Photographer</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Amazing Work! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <img src="/img7.png" alt="Talan Westervelt">
+                <h3>Talan Westervelt</h3>
+                <p>Business Man</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Great Quality! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <img src="/img10.png" alt="Talan Westervelt">
+                <h3>Talan Westervelt</h3>
+                <p>Business Man</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Great Quality! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <img src="/img 8.png" alt="Tiana Philips">
+                <h3>Tiana Philips</h3>
+                <p>Photographer</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Amazing Work! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+            <!-- Add more review cards as needed -->
+            <div class="review-card">
+                <img src="/img 8.png" alt="Tiana Philips">
+                <h3>Tiana Philips</h3>
+                <p>Photographer</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Amazing Work! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+            <div class="review-card">
+                <img src="/img 8.png" alt="Tiana Philips">
+                <h3>Tiana Philips</h3>
+                <p>Photographer</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Amazing Work! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+            <div class="review-card">
+                <img src="/img 8.png" alt="Tiana Philips">
+                <h3>Tiana Philips</h3>
+                <p>Photographer</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Amazing Work! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+            <div class="review-card">
+                <img src="/img 8.png" alt="Tiana Philips">
+                <h3>Tiana Philips</h3>
+                <p>Photographer</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">Amazing Work! Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Lc Dictum A Uma Viverra Morbi.</p>
+            </div>
+        </div>
+        
+
+        <!-- Previous and Next buttons -->
+        <button class="nav-button prev" id="prevBtn">&#10094;</button>
+        <button class="nav-button next" id="nextBtn">&#10095;</button>
+        
+        <!-- Dot Navigation -->
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+        </div>
+    </div>
+</section>
+
+       
+    
+        <script src="script.js"></script>
+        <!--contact Section-->
+
+        <section>
+         
+        </section>
+    <section>
+
+   
+        <!-- Footer Section -->
+        <footer>
+            <!-- New container for the frame images and footer content -->
+            <div class="footer-content">
+                <!-- Frame images at the top, centered -->
+                <div class="frame-container">
+                    <img src="/Frame1.png" alt="Frame 1" class="frame-img">
+                    <img src="/Frame2.png" alt="Frame 2" class="frame-img">
+                    <img src="/Frame3.png" alt="Frame 3" class="frame-img">
+                    <img src="/Frame4.png" alt="Frame 4" class="frame-img">
+                </div>
+        
+                <!-- Existing footer content -->
+                <div class="footer-container">
+                    <!-- Section 1: Logos/Images -->
+                    <div class="footer-section logos">
+                        <ul>
+                            <li>
+                                <img src="/Logo.png" alt="Logo" style="width: 158px; height: 76px;">
+                            </li>
+                            <li>
+                                <a href=""><img src="/Rectangle 97.png" alt=""></a>
+                                <p>4.5/5 rating on Lorem</p>
+                            </li>
+                            <li>
+                                <a href=""><img src="/Group 270.png" alt=""></a>
+                                <p>9/10 rating on Ipsum</p>
+                            </li>
+                            <li>
+                                <a href=""><img src="/Rectangle 100.png" alt=""></a>
+                                <p>4.5/5 rating on Dorel</p>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Section 2: Quick Links -->
+                    <div class="footer-section quick-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Recommendations</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Section 3: Portfolio -->
+                    <div class="footer-section portfolio">
+                        <h3>Portfolio</h3>
+                        <ul>
+                            <li><a href="#">Frontend Development</a></li>
+                            <li><a href="#">Backend Development</a></li>
+                            <li><a href="#">Website Design</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                            <li><a href="#">Problem Solving & DSA</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Section 4: Connect -->
+                    <div class="footer-section connect">
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><a href="https://linkedin.com" target="_blank"><img src="/LinkedIn.png" alt=""></a></li>
+                            <li><a href="https://instagram.com" target="_blank"><img src="/Instagram.png" alt=""></a></li>
+                            <li><a href="https://facebook.com" target="_blank"><img src="/Facebook.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Copyright, All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        
+               
+           
+
+    </section>
+</body>
+</html>

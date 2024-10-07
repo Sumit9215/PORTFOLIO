@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Languages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/ass.html">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="skills-section">
+            <h1>Skills & Languages</h1>
+            <p>Explore my skills in various domains like Front-End, Back-End, and Languages</p>
+            
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Pre-populated skill cards -->
+                <div class="skill-card">
+                    <h3>Front End Development</h3>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WordPress</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <div class="skill">
+                        <span>Hindi</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>English</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Back End Development</h3>
+                    <div class="skill">
+                        <span>NodeJS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="add-skill-btn" onclick="openModal()">Add Skill</button>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="addSkillModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add Skill</h2>
+            <form id="addSkillForm">
+                <div class="form-group">
+                    <label for="domain">Domain</label>
+                    <input type="text" id="domain" name="domain" placeholder="e.g., Front End Development" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="skill">Skill</label>
+                    <input type="text" id="skill" name="skill" placeholder="Enter skill" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="percentage">Proficiency (%)</label>
+                    <input type="number" id="percentage" name="percentage" min="0" max="100" placeholder="e.g., 85" required>
+                </div>
+
+                <button type="submit">Add Skill</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="script copy.js"></script>
+  
+     
+   
+    <Section>
+<!-- Footer Section -->
+<footer>
+    <!-- New container for the frame images and footer content -->
+    <div class="footer-content">
+        <!-- Frame images at the top, centered -->
+        <div class="frame-container">
+            <img src="/Frame1.png" alt="Frame 1" class="frame-img">
+            <img src="/Frame2.png" alt="Frame 2" class="frame-img">
+            <img src="/Frame3.png" alt="Frame 3" class="frame-img">
+            <img src="/Frame4.png" alt="Frame 4" class="frame-img">
+        </div>
+
+        <!-- Existing footer content -->
+        <div class="footer-container">
+            <!-- Section 1: Logos/Images -->
+            <div class="footer-section logos">
+                <ul>
+                    <li>
+                        <img src="/Logo.png" alt="Logo" style="width: 158px; height: 76px;">
+                    </li>
+                    <li>
+                        <a href=""><img src="/Rectangle 97.png" alt=""></a>
+                        <p>4.5/5 rating on Lorem</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="/Group 270.png" alt=""></a>
+                        <p>9/10 rating on Ipsum</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="/Rectangle 100.png" alt=""></a>
+                        <p>4.5/5 rating on Dorel</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 2: Quick Links -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Recommendations</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Portfolio -->
+            <div class="footer-section portfolio">
+                <h3>Portfolio</h3>
+                <ul>
+                    <li><a href="#">Frontend Development</a></li>
+                    <li><a href="#">Backend Development</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Problem Solving & DSA</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 4: Connect -->
+            <div class="footer-section connect">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://linkedin.com" target="_blank"><img src="/LinkedIn.png" alt=""></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><img src="/Instagram.png" alt=""></a></li>
+                    <li><a href="https://facebook.com" target="_blank"><img src="/Facebook.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Copyright, All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+       
+    </section>
+    
+</body>
+</html>
